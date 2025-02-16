@@ -18,8 +18,9 @@ Configuration of the module is done by 8 DIP switches (see below).
 Diagram and PCB in Eagle 6.5.0 are available at [TFA_sensor/](./TFA_sensor/) 
 
 ![Circuit diagram](./img/circuit_diagram.png)
-![PCB top](./img/pcb_top.png)
-![PCB bottom](./img/pcb_bottom.png)
+
+![./img/pcb_top_prev.png](./img/pcb_top.png)
+![./img/pcb_bottom_prev.png](./img/pcb_bottom.png)
 
 ## AVR Firmware
 
