@@ -4,7 +4,7 @@ Recently, one of my meteo sensors TFA Dostmann 30.3215.02 died (rusted battery c
 Not so long ago I decoded its data packets and made logging receiver for this particular type ([TFA-30321502-decoder](https://github.com/smaslan/TFA-30321502-decoder)). 
 So, I decided to make a clone of this sensor based on the decoded format and it seems to work fine.
 
-![./img/pic_01_prev.jpg](./img/pic_01.jpg)
+[![Prototype](./img/pic_01_prev.jpg)](./img/pic_01.jpg)
 
 ## Hardware
 
@@ -19,8 +19,8 @@ Diagram and PCB in Eagle 6.5.0 are available at [TFA_sensor/](./TFA_sensor/)
 
 ![Circuit diagram](./img/circuit_diagram.png)
 
-[![PCB top](./img/pcb_top_prev.png)](./img/pcb_top.png)
-![./img/pcb_bottom_prev.png](./img/pcb_bottom.png)
+[![PCB top](./img/pcb_top_prev.png)](./img/pcb_top.png) [![PCB bottom](./img/pcb_bottom_prev.png)](./img/pcb_bottom.png)
+
 
 ## AVR Firmware
 
