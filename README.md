@@ -33,7 +33,7 @@ Dual color LED will blink green if battery voltage is ok and red if not.
 
 DIP switches configuration:
 ```
-CH[1..0]: Channel code, original sensors use values 0, 1 and 2 (equal to original sensor switch positions 1, 2, 3), 
+CH[1..0]: Channel code, values 0, 1 and 2 (equal to original sensor switch positions 1, 2, 3), 
           this FW allows codes up to 3 but it won't be recognized by original meteo base station!
 A[3..0]:  Sensor ID code: 0 will generate random ID after power up or RESET,
                           1 to 15 will force A value as sensor ID.
