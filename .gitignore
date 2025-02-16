@@ -1,0 +1,4 @@
+
+/TFA_sensor/fw_tfa_sensor/Release/*
+!/TFA_sensor/fw_tfa_sensor/Release/*.hex
+/TFA_sensor/tfa_sensor.*
