@@ -2,9 +2,9 @@
 
 Recently, one of my meteo sensors TFA Dostmann 30.3215.02 died (rusted battery contacts). 
 Not so long ago I decoded its data packets and made logging receiver for this particular type ([TFA-30321502-decoder](https://github.com/smaslan/TFA-30321502-decoder)). 
-So, I decided to try to make a clone of this sensor based on the decoded format and it seems to work fine.
+So, I decided to make a clone of this sensor based on the decoded format and it seems to work fine.
 
-![Controller box](./img/pic_01.jpg)
+![./img/pic_01_prev.jpg](./img/pic_01.jpg)
 
 ## Hardware
 
@@ -25,9 +25,11 @@ Diagram and PCB in Eagle 6.5.0 are available at [TFA_sensor/](./TFA_sensor/)
 
 Firmware for AVR is written in [Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio) using AVRGCC compiler. 
 AVR main clock is internal RC at 1MHz which is more than enough. Timer 2 is configured to use external 32768Hz crystal to periodically wakeup AVR from power save mode for the auto reporting.
-Reporting period can be set by DIP switches and it is randomized +-5% to prevent permanent overlap with other sensors. Reporting can be also forced by SYNC button same as with original sensors. 
+Reporting period can be set by DIP switches and it is randomized +-5% to prevent permanent overlap with other sensors. Reporting can be also forced by SYNC button same as with original sensors.
+Pressing RESET or cycling power will regenerate random device ID code same as with original sensor. 
 When SYNC button or periodic wakeup occures, it will enable power bus, read sensor data and start transmission in format described in 
 [TFA-30321502-decoder](https://github.com/smaslan/TFA-30321502-decoder). Then goes sleep again. The whole cycle takes less than 1 second (transmission is slow).
+Dual color LED will blink green if battery voltage is ok and red if not.
 
 DIP switches configuration:
 ```
